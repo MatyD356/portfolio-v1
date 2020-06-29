@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Lemon&display=swap");
+* {
+  --main: linear-gradient(0deg, #ae2c27, #3f3d56);
+  --white: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lemon", cursive;
+}
+body,
+html {
+  max-width: 2100px;
+  margin: auto;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  background: -webkit-linear-gradient(#3f3d56, #ae2c27);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.about-me,
+.projects,
+.contact {
+  padding: 4rem;
+  position: relative;
+}
+a {
+  display: block;
+}
+/* ----------
+    Typhography
+-----------*/
+
+/* ---- Navbar ---- */
+header {
+  color: var(--white);
+}
+.header__title {
+  font-size: 3rem;
+}
+.header__nav_ul {
+  list-style: none;
+}
+.header__nav__link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--white);
+}
+/*---- hero-section ----*/
+.hero-section__title {
+  font-size: 3rem;
+  color: var(--white);
+}
+.hero-section__left-column-icon {
+  text-align: center;
+}
+.fa-github,
+.fa-codepen {
+  font-size: 2rem;
+  color: black;
+}
+/* --- About me ---*/
+.about-me__column__desc {
+  font-size: 2rem;
+  line-height: 2em;
+}
+/* --- my projects ---*/
+/* --- Contact ---*/
+.fa-phone,
+.fa-envelope,
+.fa-facebook-messenger {
+  font-size: 3em;
+}
+.contact__col__icon {
+  color: white;
+  text-align: center;
+}
+.contac_col__desc {
+  font-size: 2em;
+}
+/*-- footer --*/
+footer {
+  color: #fff;
+  text-align: right;
+}
+/* ----------
+    Layout
+-----------*/
+/* ---- Navbar ---- */
+header {
+  max-width: 2100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  padding: 1rem 2rem;
+}
+.header__nav {
+  margin: 0 0 0 auto;
+}
+.header__nav_ul {
+  display: flex;
+  padding: 1rem 2rem;
+}
+.header__nav__link {
+  padding: 1rem;
+}
+/*---- hero-section ----*/
+.hero-section {
+  max-height: 1100px;
+  padding-top: 8rem;
+  background: var(--main);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-section__left-column {
+  margin-top: 2em;
+  width: 45%;
+  margin-left: 4rem;
+}
+.hero-section__title {
+  margin-bottom: 1em;
+}
+.hero-section__left-column-icon {
+  margin-bottom: 1.5em;
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 1em;
+  width: 65px;
+}
+.hero-section__right-column {
+  width: 45%;
+  margin-right: 2rem;
+}
+/* --- my projects ---*/
+.my-projects__lower-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.my-projects__lower-col__project {
+  text-align: center;
+  width: 33%;
+  margin: 1rem;
+  transition-duration: 200ms;
+  position: relative;
+}
+
+.project-link {
+  cursor: pointer;
+  background-image: var(--main);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--white);
+  transition-duration: 200ms;
+}
+.project-link:hover {
+  transform: scale(1.2);
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-projects__lower-col__project__inner,
+.project-tile {
+  background-color: #fff;
+  display: block;
+}
+
+/* --- Contact ---*/
+.contact {
+  padding-top: 0;
+}
+.contact__col {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main);
+}
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+.contact__col__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  min-height: 100px;
+}
+.contac_col__desc {
+  margin-right: 1rem;
+}
+
+/* --- footer ---*/
+footer {
+  background-color: #3f3d56;
+  padding: 1.5em;
+}
+@media (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+  .header__nav_ul,
+  header {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+
+  .my-projects__lower-col {
+    flex-direction: column;
+  }
+}
