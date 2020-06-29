@@ -218,7 +218,7 @@ footer {
 }
 @media (max-width: 600px) {
   * {
-    font-size: 10px;
+    font-size: 12px;
   }
   .header__nav_ul,
   header {
@@ -235,6 +235,12 @@ footer {
   }
 
   .my-projects__lower-col {
-    flex-direction: column;
+    width: 100%;
+  }
+  .my-projects__lower-col__project {
+    width: auto;
+  }
+  .contact__col {
+    font-size: 6px;
   }
 }
